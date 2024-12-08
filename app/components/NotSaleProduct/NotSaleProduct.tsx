@@ -1,12 +1,14 @@
+"use client";
 import Image from "next/image";
-
+import { useCart } from "@/app/context/cartContext";
 interface Props {
     img: string;
-    price: number;
+    price: string;
     name: string;
     customWidth?: number;  // Optional custom width
     customHeight?: number; // Optional custom height
 }
+
 
 export default function NotSaleProduct({
     img,
@@ -15,7 +17,19 @@ export default function NotSaleProduct({
     customWidth = 250,   // Default width is 250
     customHeight = 100   // Default height is 100
 }: Props) {
+    const { addToCart } = useCart();
+    const handleAddToCart = () => {
+        const item = {
+          img,
+          price: parseFloat(price), // Convert price to a number for better handling
+          name,
+          from: 0, // You can add a 'from' price here if necessary
+          review: 0, // Add review count if available
+        };
+        addToCart(item);
+      };
     return (
+        
         <div className="flex flex-col w-[full]">
             <div>
                 <Image 
@@ -32,18 +46,17 @@ export default function NotSaleProduct({
                         <p>${price}</p>
                     </span>
                     <span className="hover:bg-[#029FAE] rounded-lg p-2">
-                        <Image 
+                    <button onClick={handleAddToCart}>
+                    <Image 
                             src="/images/cart.png" 
                             alt="unable to load" 
                             width={20} 
                             height={20} 
                         />
+    </button>
                     </span>
                 </span>
             </div>
         </div>
     );
 }
-
-// Usage with custom width and height
-

@@ -8,7 +8,7 @@ export default function AboutHero(){
                 <h1 className="text-2xl font-bold p-2">About Us-Comforty</h1>
                 <p className="text-xsm p-2">At Comforty, we believe that the right chair can transform your space and elevate your comfort. Specializing in ergonomic design, premium materials, and modern aesthetics, we craft chairs that seamlessly blend style with functionality. </p>
                 </span>
-                <span className="absolute bottom-0 bg-[#007580] blur-1 px-8 py-2 border-2 opacity-50 p-2  md:bottom-14">
+                <span className="absolute bottom-42 bg-[#007580] blur-1 px-8 py-2 border-2 opacity-50 p-2  md:bottom-[60%] lg:bottom-12">
                     <button><Link href="" className="text-white">Vew Collection</Link></button>
                 </span>
 

@@ -1,11 +1,30 @@
 import Image from "next/image";
-interface props{
-    name:string;
-    price:number;
-  
-    img:string;
+import { useCart } from "@/app/context/cartContext";
+interface Props {
+    img: string;
+    price: string;
+    name: string;
+    customWidth?: number;  // Optional custom width
+    customHeight?: number; // Optional custom height
 }
-export default function NewProduct({name,price,img}:props){
+
+
+export default function NotSaleProduct({
+    img,
+    price,
+    name,  // Default height is 100
+}: Props) {
+    const { addToCart } = useCart();
+    const handleAddToCart = () => {
+        const item = {
+          img,
+          price: parseFloat(price), // Convert price to a number for better handling
+          name,
+          from: 0, // You can add a 'from' price here if necessary
+          review: 0, // Add review count if available
+        };
+        addToCart(item);
+      };
     return(
         <div className="flex flex-col w-[full]">
             <div>
@@ -22,8 +41,15 @@ export default function NewProduct({name,price,img}:props){
                         <p>${price}</p>
                         </span>
                         <span className="hover:bg-[#029FAE] rounded-lg p-2">
-                        <Image src="/images/cart.png" alt="umable to load" width={20} height={20} />
-                        </span>
+                    <button onClick={handleAddToCart}>
+                    <Image 
+                            src="/images/cart.png" 
+                            alt="unable to load" 
+                            width={20} 
+                            height={20} 
+                        />
+    </button>
+                    </span>
                 </span>
                 
             </div>

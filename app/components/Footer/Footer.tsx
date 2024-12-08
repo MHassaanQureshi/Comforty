@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer(){
     return(
         <div className="border-t-2 p-2 w-full ">
-            <div className="w-full flex flex-col gap-4">
+            <div className="w-full flex flex-col gap-4 md:flex-row md:gap-32">
                 <div className="w-[80%] p-2">
                 <div className="flex flex-row items-center gap-1">
                 <Image src="/images/logo.png" alt="umable to load" width={40} height={40} />
@@ -21,7 +21,7 @@ export default function Footer(){
                     <Socials img="/images/youtube.png"/>
                 </div>
                 </div>
-                <div className="flex justify-evenly">
+                <div className="flex justify-evenly md:gap-32 md:pt-2 md:pb-2">
                 <div>
                     <h1 className="text-2xl text-[##272343] opacity-40 font-bold">Category</h1>
                     <ul className="">
@@ -49,7 +49,7 @@ export default function Footer(){
                 <h1 className="text-LG text-[##272343] opacity-40 font-bold">NEWS LETTERS</h1>
                     <span className="w-full flex gap-4">
                         <input type="text" className="border-2 border-gray-200 p-2" placeholder="enter Email"/>
-                        <button className="bg-[#007580] text-white px-4 text-sm rounded-lg"><Link href="">Subscribe</Link></button>
+                        <button className="bg-[#007580] text-white  text-sm rounded-lg md:px-4"><Link href="">Subscribe</Link></button>
                     </span>
                 </div>
             </div>

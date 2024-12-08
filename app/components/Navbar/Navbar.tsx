@@ -62,13 +62,19 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Product" className="hover:border-b-2 border-black">
+                    <Link href="/Products" className="hover:border-b-2 border-black">
                       Product
                     </Link>
                   </li>
                   <li>
                     <Link href="/About" className="hover:border-b-2 border-black">
                       About
+                    </Link>
+                   
+                  </li>
+                  <li>
+                  <Link href="/Faq" className="hover:border-b-2 border-black">
+                      Questions
                     </Link>
                   </li>
                  
@@ -81,7 +87,7 @@ export default function Navbar() {
             </div>
             
             {menuOpen && (
-                <div className="md:hidden w-[50%] items-center bg-[#272343] flex flex-col rounded-lg text-white shadow-lg   absolute right-2    z-10 pb-2">
+                <div className="lg:hidden w-[50%] items-center bg-[#272343] flex flex-col rounded-lg text-white shadow-lg   absolute right-2    z-10 pb-2">
                 <ul className="flex flex-col space-y-4 mt-4 p-2 items-center">
                   <li>
                     <Link href="/" className="hover:border-b-2 border-black">
@@ -94,13 +100,18 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Product" className="hover:border-b-2 border-black">
+                    <Link href="/Products" className="hover:border-b-2 border-black">
                       Product
                     </Link>
                   </li>
                   <li>
                     <Link href="/About" className="hover:border-b-2 border-black">
                       About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/Faq" className="hover:border-b-2 border-black">
+                      Questions
                     </Link>
                   </li>
                  
