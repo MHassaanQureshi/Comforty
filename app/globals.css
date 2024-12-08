@@ -8,7 +8,12 @@
 }
 
 
-
+@layer utilities {
+  .writing-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); /* Optional: Flip direction */
+  }
+}
 body {
   
   font-family: "Inter", sans-serif;

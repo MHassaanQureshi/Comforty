@@ -57,7 +57,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/products" className="hover:border-b-2 border-black">
+                    <Link href="/Products" className="hover:border-b-2 border-black">
                       Shop
                     </Link>
                   </li>
@@ -67,7 +67,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about" className="hover:border-b-2 border-black">
+                    <Link href="/About" className="hover:border-b-2 border-black">
                       About
                     </Link>
                   </li>
@@ -89,7 +89,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/products" className="hover:border-b-2 border-black">
+                    <Link href="/Products" className="hover:border-b-2 border-black">
                       Shop
                     </Link>
                   </li>
@@ -99,7 +99,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about" className="hover:border-b-2 border-black">
+                    <Link href="/About" className="hover:border-b-2 border-black">
                       About
                     </Link>
                   </li>
