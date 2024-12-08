@@ -27,8 +27,10 @@ export default function Home(){
     </div>
     <div className="w-full flex flex-col p-2 mt-10">
       <h1 className="text-2xl font-bold p-2">Top Categories</h1>
-      <div className=" w-[full] flex flex-col  mt-5 gap-4 items-center md:flex-row md:justify-center md:gap-10">
-      <Categorycard />
+      <div className=" w-[full] flex flex-col  mt-5 gap-10 items-center md:flex-row md:justify-center md:gap-10">
+      <Categorycard name="Wing chair" products={3584} img="/images/cat-1.png"/>
+      <Categorycard name="Wooden chair chair" products={24} img="/images/cat-2.png"/>
+      <Categorycard name="Desk chair" products={154} img="/images/cat-3.png"/>
     
       </div>
     </div>
