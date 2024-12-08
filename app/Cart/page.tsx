@@ -14,7 +14,7 @@ export default function CartPage() {
       {cart.length === 0 ? (
         <p className="text-gray-500">Your cart is empty.</p>
       ) : (
-        <div className="w-[60%] flex flex-col gap-4">
+        <div className="w-[80%] flex flex-col gap-4 md:w-[40%]">
           {cart.map((item, index) => (
             <div
               key={index}

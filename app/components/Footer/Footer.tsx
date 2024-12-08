@@ -36,10 +36,10 @@ export default function Footer(){
                 <div>
                     <h1 className="text-2xl text-[##272343] opacity-40 font-bold">Support</h1>
                     <ul className="">
-                        <li><Link href=""  className="hover:underline hover:text-[#007580]">Help & Support</Link></li>
-                        <li><Link href=""className="hover:underline hover:text-[#007580]">Terms & Conditions</Link></li>
-                        <li><Link href="" className="hover:underline hover:text-[#007580]">Privacy Policy</Link></li>
-                        <li><Link href="" className="hover:underline hover:text-[#007580]">Help</Link></li>
+                        <li><Link href="/Contact"  className="hover:underline hover:text-[#007580]">Help & Support</Link></li>
+                        <li><Link href="/Contact"className="hover:underline hover:text-[#007580]">Terms & Conditions</Link></li>
+                        <li><Link href="/Contact" className="hover:underline hover:text-[#007580]">Privacy Policy</Link></li>
+                        <li><Link href="/Contact" className="hover:underline hover:text-[#007580]">Help</Link></li>
                         
                     </ul>
                 </div>
