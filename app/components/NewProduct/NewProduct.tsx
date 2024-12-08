@@ -31,7 +31,7 @@ export default function NotSaleProduct({
             <span className="absolute bg-[#01AD5A] p-1 text-white ml-2 mt-4 text-sm rounded-lg">
       New
     </span>
-                <Image src={img} alt="unable to load" width={250} height={100} />
+                <Image src={img} alt="unable to load" width={250} height={100} className="hover:scale-105 transition-transform duration-500"/>
             </div>
             <div className="flex flex-col">
             <h1 className="font-bold">{name}</h1>
@@ -47,6 +47,7 @@ export default function NotSaleProduct({
                             alt="unable to load" 
                             width={20} 
                             height={20} 
+                            
                         />
     </button>
                     </span>

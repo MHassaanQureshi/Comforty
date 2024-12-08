@@ -37,6 +37,7 @@ export default function NotSaleProduct({
                     alt="unable to load" 
                     width={customWidth} 
                     height={customHeight} 
+                    className="hover:scale-105 transition-transform duration-500"
                 />
             </div>
             <div className="flex flex-col">

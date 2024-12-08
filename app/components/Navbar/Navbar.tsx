@@ -52,28 +52,28 @@ export default function Navbar() {
                
                 <ul className="hidden md:lg:flex space-x-8 text-xl px-6 py-2 items-center text-[#636270]">
                 <li>
-                    <Link href="/" className="hover:border-b-2 border-black">
+                    <Link href="/" className="hover:border-b-2 border-black hover:scale-105 transition-transform duration-500">
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Products" className="hover:border-b-2 border-black">
+                    <Link href="/Products" className="hover:border-b-2 border-black hover:scale-105 transition-transform duration-500">
                       Shop
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Products" className="hover:border-b-2 border-black">
+                    <Link href="/Products" className="hover:border-b-2 border-black hover:scale-105 transition-transform duration-500">
                       Product
                     </Link>
                   </li>
                   <li>
-                    <Link href="/About" className="hover:border-b-2 border-black">
+                    <Link href="/About" className="hover:border-b-2 border-black hover:scale-105 transition-transform duration-500">
                       About
                     </Link>
                    
                   </li>
                   <li>
-                  <Link href="/Faq" className="hover:border-b-2 border-black">
+                  <Link href="/Faq" className="hover:border-b-2 border-black hover:scale-105 transition-transform duration-500">
                       Questions
                     </Link>
                   </li>

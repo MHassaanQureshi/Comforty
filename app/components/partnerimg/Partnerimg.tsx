@@ -6,7 +6,7 @@ interface brandprops{
 export default function Partnerimg({link}:brandprops){
     return(
         <>
-        <Image src={link} alt="unable to load" width={100} height={100} className="mix-blend-multiply"/>
+        <Image src={link} alt="unable to load" width={100} height={100} className="hover:scale-105 transition-transform duration-500"/>
         </>
     )
 }
